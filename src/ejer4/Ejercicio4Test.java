@@ -25,7 +25,8 @@ class Ejercicio4Test {
 		return Stream.of(
 				Arguments.of(2, true),
 				Arguments.of(3, true),
-				Arguments.of(4, false), 
+				Arguments.of(4, false),
+				Arguments.of(5, true), 
 				Arguments.of(9, false), 
 				Arguments.of(11, true),
 				Arguments.of(1, false)
