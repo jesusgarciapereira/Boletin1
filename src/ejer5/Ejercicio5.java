@@ -13,7 +13,7 @@ public class Ejercicio5 {
 
 		}
 		
-		resultado = num == numAlreves;
+		resultado = (num == numAlreves);
 
 		// Todo este código se volverá innecesario
 		
