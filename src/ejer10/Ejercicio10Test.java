@@ -21,8 +21,11 @@ class Ejercicio10Test {
 	}
 
 	private static Stream<Arguments> palindromando() {
-		return Stream.of(Arguments.of("a", true)
-				
+		return Stream.of(Arguments.of("a", true),
+				Arguments.of("bb", true),
+				Arguments.of("cac", true),
+				Arguments.of("cabc", false),
+				Arguments.of("abcdedcba", true)
 
 		);
 
