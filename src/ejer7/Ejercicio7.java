@@ -6,8 +6,26 @@ public class Ejercicio7 {
 
 		boolean resultado = false;
 
-		if ((dia >= 1 && dia <= 31) && (mes >= 1 && mes <= 12)) {
-			resultado = true;
+		switch (mes) {
+		case 1, 3, 5, 7, 8, 31, 12:
+			if (dia >= 1 && dia <= 31) {
+				resultado = true;
+			}
+		case 4, 6, 9, 11:
+			if (dia >= 1 && dia <= 30) {
+				resultado = true;
+			}
+
+			break;
+		case 2:
+			if (dia >= 1 && dia <= 28 || dia == 29 && (annio % 400 == 0 || (annio % 4 == 0 && annio % 100 != 0))) {
+				resultado = true;
+			}
+
+			break;
+
+		default:
+			break;
 		}
 
 		return resultado;
