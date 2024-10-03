@@ -15,7 +15,7 @@ class Ejercicio10Test {
 
 	@ParameterizedTest
 	@MethodSource("palindromando")
-	void testFechaCorrecta(String palabra, boolean resEsperado)  {
+	void testEsPalindromo(String palabra, boolean resEsperado)  {
 		boolean resObtenido = Ejercicio10.esPalindromo(palabra);
 		assertEquals(resEsperado, resObtenido);
 	}
