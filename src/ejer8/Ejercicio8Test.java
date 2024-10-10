@@ -25,7 +25,7 @@ class Ejercicio8Test {
 	@ParameterizedTest
 	@MethodSource("fibonachiando")
 	void testFechaCorrecta(int posicion, int resEsperado) throws Exception {
-		int resObtenido = Ejercicio8.fibonacci(posicion);
+		long resObtenido = Ejercicio8.fibonacci(posicion);
 		assertEquals(resEsperado, resObtenido);
 	}
 
